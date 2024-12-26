@@ -67,11 +67,35 @@ The dataset includes various features related to air quality measurements. Key s
    Place `AirQuality.csv` in the same directory as the script and execute the script.
 
 3. **Output:**
+   Random Forest Report
+              precision    recall  f1-score   support
+
+           0       0.96      0.95      0.95       328
+           1       0.86      0.80      0.83        40
+           2       0.81      0.90      0.85        60
+
+    accuracy                           0.93       428
+   macro avg       0.88      0.88      0.88       428
+weighted avg       0.93      0.93      0.93       428
+
+Accuracy: 0.927570093457944
+XGBoost Report
+              precision    recall  f1-score   support
+
+           0       0.96      0.95      0.96       328
+           1       0.91      0.75      0.82        40
+           2       0.80      0.92      0.85        60
+
+    accuracy                           0.93       428
+   macro avg       0.89      0.87      0.88       428
+weighted avg       0.93      0.93      0.93       428
+
+Accuracy: 0.9299065420560748
    - The script prints evaluation metrics for both models.
    - Saves the best model as `uap_model.pkl`.
    - Saves feature names as `feature.pkl`.
 
-4. **Plot Learning Curve:**
+5. **Plot Learning Curve:**
    The script generates a plot showing the learning curve of the Random Forest model.
 
 ## Files
